@@ -10,10 +10,10 @@
 4. Перейти в директорию AllPlatforms.
 5. Запустить STLinkUpgrade.jar из консоли с аргументами [отсюда]( https://github.com/blackmagic-debug/blackmagic/blob/main/src/platforms/stlink/README.md) (я использовал выделенный на скрине вариант, но работают все для стлинк 2 и 2.1 я проверял)
 
-   ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+   ![](img/comand.jpg)
 6. Программа прошьет стлинк и кинет ошибку.
   
-   ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+   ![](img/error.jpg)
 7. Переподключаем плату - готово прошивка обновлена.
 
-   ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+   ![](img/cubeprog_fw_version.png)
