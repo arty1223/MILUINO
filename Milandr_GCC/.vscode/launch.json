@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with OpenOCD",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "configFiles": [ "openocd.cfg" ],
+            "cwd": "${workspaceRoot}",
+            // "executable": "build/mdr_test.elf",
+            "executable": "${command:cmake.launchTargetPath}",
+            "preLaunchTask": "CMake: build",
+            "preRestartCommands": [
+                "load",
+                "enable breakpoint",
+                "monitor reset"
+            ],
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "raw",
+            "device": "К1986ВЕ92FI",
+            "svdFile": "${workspaceRoot}/MDR32F9Q2I.svd",
+        }
+    ]
+}
