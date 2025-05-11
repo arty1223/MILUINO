@@ -1,0 +1,10 @@
+# ninja log v5
+36	169	7684499198057015	CMakeFiles/Milandr-template.dir/Drivers/SPL/src/MDR32FxQI_rst_clk.c.obj	a09026c51e779d5a
+21	54	7684499196895957	CMakeFiles/Milandr-template.dir/Startup/startup_gcc_MDR32F9Q2I.s.obj	3a1d28a9fd72d991
+12	113	7684499197486585	CMakeFiles/Milandr-template.dir/app/src/app.c.obj	e340f6da664199ef
+25	152	7684499197876846	CMakeFiles/Milandr-template.dir/Drivers/CMSIS/DeviceSupport/startup/system_MDR32F9Q2I.c.obj	f65072d98894dafa
+17	28	0	clean	5c1d2a0083349566
+40	159	7684499197956926	CMakeFiles/Milandr-template.dir/Drivers/SPL/src/MDR32FxQI_port.c.obj	ef9edacb0e518c0d
+170	267	7684499198927810	Milandr-template	2b64360842a0279e
+10	127	7684503936700014	CMakeFiles/Milandr-template.dir/app/src/app.c.obj	e340f6da664199ef
+127	221	7684503937560794	Milandr-template	2b64360842a0279e
