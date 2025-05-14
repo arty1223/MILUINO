@@ -1,5 +1,0 @@
-D:/Documents/Milandr/Milandr-template/build/debug/CMakeFiles/Milandr-template.dir
-D:/Documents/Milandr/Milandr-template/build/debug/CMakeFiles/edit_cache.dir
-D:/Documents/Milandr/Milandr-template/build/debug/CMakeFiles/rebuild_cache.dir
-D:/Documents/Milandr/Milandr-template/build/debug/Drivers/CMakeFiles/edit_cache.dir
-D:/Documents/Milandr/Milandr-template/build/debug/Drivers/CMakeFiles/rebuild_cache.dir
