@@ -39,6 +39,7 @@ include_directories(
 set(SOURCES
     "${CMAKE_SOURCE_DIR}/startup_gcc_MDR32F9Q2I.s"
     "${CMAKE_SOURCE_DIR}/CMSIS/MDR32FxQI/DeviceSupport/MDR32F9Q2I/startup/system_MDR32F9Q2I.c"
+	"${SPL_SRC_PATH}/MDR32FxQI_asm_GCC.S"
     "${CMAKE_SOURCE_DIR}/App/Src/main.c"
 	"${SPL_SRC_PATH}/MDR32FxQI_rst_clk.c"
 	"${SPL_SRC_PATH}/MDR32FxQI_port.c"
