@@ -8,7 +8,7 @@
 2. Зашить загрузчик той же утилитой (есть на сайте кадетека под этой [статьей](https://cadetech.ru/node/30) (есть еще на гитхабе [NR.electronics](https://github.com/nr-electronics/DiY/tree/master/ST-Link%20V2.1%20%2B%20VCP%20%2B%20Mass%20Storage/Stlink-Bootloaders-master)).
 3. Скачать с сайта ST программу stsw-link007.
 4. Перейти в директорию AllPlatforms.
-5. Запустить STLinkUpgrade.jar из консоли с аргументами [отсюда]( https://github.com/blackmagic-debug/blackmagic/blob/main/src/platforms/stlink/README.md) (в конечном итоге я использовал этот вариант: ```java -jar STLinkUpgrade.jar -msvcp -force_prog```, но работают все для стлинк 2 и 2.1 я проверял)
+5. Запустить STLinkUpgrade.jar из консоли с аргументами [отсюда]( https://github.com/blackmagic-debug/blackmagic/blob/main/src/platforms/stlink/README.md) (в конечном итоге я использовал этот вариант: ```java -jar STLinkUpgrade.jar -jtag -force_prog```, но работают все для стлинк 2 и 2.1 я проверял)
 6. Программа прошьет стлинк и кинет ошибку.
   
    ![](img/error.jpg)
