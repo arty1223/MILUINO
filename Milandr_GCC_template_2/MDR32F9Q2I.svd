@@ -5470,7 +5470,7 @@
                 </register>
             </registers>
         </peripheral>
-        <peripheral derivedFrom="MDR_MIL_STD_15531">
+        <!-- <peripheral derivedFrom="MDR_MIL_STD_15531">
             <name>MDR_MIL_STD_15532</name>
             <description>MIL_STD_1553 interface controller registers</description>
             <groupName>MIL_STD_1553</groupName>
@@ -5479,7 +5479,7 @@
                 <name>MILSTD2_IRQ</name>
                 <value>0</value>
             </interrupt>
-        </peripheral>
+        </peripheral> -->
         <peripheral>
             <name>MDR_POWER</name>
             <version>1.0</version>
@@ -5646,6 +5646,207 @@
                     <fields>
                         <field>
                             <name>EWIF</name>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+            </registers>
+        </peripheral>
+        <peripheral>
+            <name>MDR_I2C</name>
+            <version>1.0</version>
+            <description>I2C</description>
+            <groupName>I2C</groupName>
+            <baseAddress>0x40050000</baseAddress>
+            <size>32</size>
+            <access>read-write</access>
+            <addressBlock>
+                <offset>0</offset>
+                <size>0x1000</size>
+                <usage>registers</usage>
+            </addressBlock>
+            <registers>
+                <register>
+                    <name>PRL</name>
+                    <description>PRL</description>
+                    <addressOffset>0x00000000</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x0000FFFF</resetMask>
+                    <fields>
+                        <field>
+                            <name>PRL</name>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>8</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>PRH</name>
+                    <description>PRH</description>
+                    <addressOffset>0x00000004</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x00000007</resetMask>
+                    <fields>
+                        <field>
+                            <name>PRH</name>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>8</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>CTR</name>
+                    <description>CTR</description>
+                    <addressOffset>0x00000008</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x00000FFF</resetMask>
+                    <fields>
+                        <field>
+                            <name>EN_I2C</name>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>EN_INT</name>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>S_I2C</name>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>RXD</name>
+                    <description>RXD</description>
+                    <addressOffset>0x0000000C</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x00000003</resetMask>
+                    <fields>
+                        <field>
+                            <name>RXD</name>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>8</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>TXD</name>
+                    <description>TXD</description>
+                    <addressOffset>0x00000014</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x00000003</resetMask>
+                    <fields>
+                        <field>
+                            <name>TXD</name>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>8</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>STA</name>
+                    <description>STA</description>
+                    <addressOffset>0x00000010</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x00000003</resetMask>
+                    <fields>
+                        <field>
+                            <name>ACK</name>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>BUSY</name>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>LOST_ARB</name>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>TR_PROG</name>
+                            <bitOffset>1</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>INT</name>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>CMD</name>
+                    <description>CMD</description>
+                    <addressOffset>0x00000018</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <resetMask>0x00000003</resetMask>
+                    <fields>
+                        <field>
+                            <name>START</name>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>STOP</name>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>RD</name>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>WR</name>
+                            <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>ACK</name>
+                            <bitOffset>3</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>CLR_INT</name>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -11583,4 +11784,3 @@
         </peripheral>
     </peripherals>
 </device>
-
