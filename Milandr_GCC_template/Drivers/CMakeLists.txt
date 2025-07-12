@@ -14,10 +14,13 @@ target_include_directories(milandr_sdk INTERFACE
 
 target_sources(milandr_sdk INTERFACE
     "../Startup/startup_gcc_MDR32F9Q2I.s"
-    "CMSIS/DeviceSupport/startup/system_MDR32F9Q2I.c"      
-    "SPL/src/MDR32FxQI_asm_GCC.S"  
+    "CMSIS/DeviceSupport/startup/system_MDR32F9Q2I.c"
+    "SPL/src/MDR32FxQI_asm_GCC.S"
+    "SPL/src/syscalls.c"
     "SPL/src/MDR32FxQI_rst_clk.c"
-    "SPL/src/MDR32FxQI_port.c"     
+    "SPL/src/MDR32FxQI_port.c"
+    "SPL/src/MDR32FxQI_eeprom.c"
+    "SPL/src/MDR32FxQI_bkp.c"  
 )
 
 target_link_directories(milandr_sdk INTERFACE
