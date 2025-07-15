@@ -15,7 +15,7 @@
 ;  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR A USE MADE BY CUSTOMERS OF THE
 ;  * CODING INFORMATION CONTAINED HEREIN IN THEIR PRODUCTS.
 ;  *
-;  * <h2><center>&copy; COPYRIGHT 2024 Milandr</center></h2>
+;  * <h2><center>&copy; COPYRIGHT 2025 Milandr</center></h2>
 ;  ******************************************************************************
 ;  */
 

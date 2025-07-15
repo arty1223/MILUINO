@@ -18,9 +18,9 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 	"app/src/systick.c"
 )
 
-target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
-    USE_MDR32F9Q2I
-)
+# target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
+#     USE_MDR32F9Q2I
+# )
 
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}

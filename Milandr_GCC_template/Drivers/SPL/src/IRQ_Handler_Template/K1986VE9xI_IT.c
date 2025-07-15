@@ -15,7 +15,7 @@
   * FROM THE CONTENT OF SUCH FIRMWARE AND/OR A USE MADE BY CUSTOMERS OF THE
   * CODING INFORMATION CONTAINED HEREIN IN THEIR PRODUCTS.
   *
-  * <h2><center>&copy; COPYRIGHT 2024 Milandr</center></h2>
+  * <h2><center>&copy; COPYRIGHT 2025 Milandr</center></h2>
   */
 
 /* Includes ------------------------------------------------------------------*/
@@ -432,7 +432,7 @@ void Hard_fault_handler_c(unsigned int* hardfault_args)
 
 #endif /* #if defined (USE_K1986VE9xI) && !defined (USE_MDR32F9xI) */
 
-/*********************** (C) COPYRIGHT 2024 Milandr ****************************
+/*********************** (C) COPYRIGHT 2025 Milandr ****************************
 *
 * END OF FILE K1986VE9xI_IT.c */
 

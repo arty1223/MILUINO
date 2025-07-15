@@ -14,7 +14,7 @@
   * FROM THE CONTENT OF SUCH FIRMWARE AND/OR A USE MADE BY CUSTOMERS OF THE
   * CODING INFORMATION CONTAINED HEREIN IN THEIR PRODUCTS.
   *
-  * <h2><center>&copy; COPYRIGHT 2024 Milandr</center></h2>
+  * <h2><center>&copy; COPYRIGHT 2025 Milandr</center></h2>
   */
 
 /**
@@ -70,7 +70,7 @@ extern "C" {
 // #define USE_MDR32F1QI_REV3_4
 // #define USE_MDR32F1QI_REV6
 // #define USE_MDR32FG16S1QI
-// #define USE_K1986VE92xI
+#define USE_K1986VE92xI
 // #define USE_K1986VE94GI
 // #define USE_K1986VE1xI
 
@@ -347,6 +347,7 @@ extern "C" {
     #define __RAMFUNC
 #endif
 
+
 // <h> Parameter run-time check support
 
 // <o> Paramater checking level
@@ -384,7 +385,7 @@ extern "C" {
 
 #endif /* __MDR32FxQI_CONFIG_H */
 
-/*********************** (C) COPYRIGHT 2024 Milandr ****************************
+/*********************** (C) COPYRIGHT 2025 Milandr ****************************
 *
 * END OF FILE MDR32FxQI_config.h */
 
